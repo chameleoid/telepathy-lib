@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "@telepathy/lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Telepathy core library",
   "author": "*Kim Zick <kim@chameleoid.com>",
   "license": "MPL-2.0",
