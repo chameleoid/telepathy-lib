@@ -1,7 +1,10 @@
 {
+  "private": false,
   "name": "@telepathy/lib",
   "version": "1.0.0",
   "description": "Telepathy core library",
+  "author": "*Kim Zick <kim@chameleoid.com>",
+  "license": "MPL-2.0",
   "main": "./dist/telepathy.min.js",
   "types": "./dist/telepathy.d.ts",
   "scripts": {
@@ -14,8 +17,6 @@
     "test:watch": "jest --watch src",
     "clean": "rm -rf dist"
   },
-  "author": "*Kim Zick <kim@chameleoid.com>",
-  "license": "MPL",
   "devDependencies": {
     "@types/jest": "^24.0.17",
     "@types/node": "^12.7.1",
