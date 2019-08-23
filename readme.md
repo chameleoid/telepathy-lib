@@ -1,65 +1,12 @@
-![NPM][]
-![Downloads][]
-[![Builds][]][travis]
-[![Deps][]][gemnasium]
-[![Coverage][]][coveralls]
-[![Receiving][]][liberapay]
-[![Progress][]][liberapay]
-
 Telepathy
 =========
 A sync-less "telepathic" password manager that generates repeatable
 site-specific passwords across any of your devices.
 
-[Builds]: http://img.shields.io/travis-ci/chameleoid/telepathy.svg "Build Status"
-[travis]: https://travis-ci.org/chameleoid/telepathy
-[Deps]: https://img.shields.io/gemnasium/chameleoid/telepathy.svg "Dependency Status"
-[gemnasium]: https://gemnasium.com/chameleoid/telepathy
-[Coverage]: https://coveralls.io/repos/github/chameleoid/telepathy/badge.svg?branch=master
-[coveralls]: https://coveralls.io/github/chameleoid/telepathy?branch=master
-[Downloads]: https://img.shields.io/npm/dt/telepathy.svg
-[NPM]: https://img.shields.io/npm/v/telepathy.svg
-[Receiving]: https://img.shields.io/liberapay/receives/chameleoid.svg "Liberapay Receiving"
-[Progress]: https://img.shields.io/liberapay/goal/chameleoid.svg "Liberapay Goal Progress"
-[liberapay]: https://liberapay.com/chameleoid
+This package is the core library providing password generation functionality.
 
-
-## How does it work?
-At the core, it uses HASH(secret + user + domain) -> base-convert(62/94)
-
-
-## Getting Started
-Install with: `npm install -g telepathy`
-
-```
-> telepathy
-Telepathically manage passwords.
-Usage: telepathy
-Version: 0.4.2
-
-Options:
-  -c, --config     config file                              [default: "/path/to/home/.telepathy.json"]
-  -l, --length     password length                          [default: 10]
-  -n, --count      number of passwords to display           [default: 1]
-  -i, --index      starting password index                  [default: 0]
-  -s, --safe       [deprecated] see lax                     [default: false]
-  -x, --lax        lax mode (use base 62 instead of 94)     [default: false]
-  -a, --algorithm  hashing algorithm to use                 [default: "SHA256"]
-  -y, --clipboard  copy to clipboard instead of outputting  [default: true]
-  -d, --domain                                              [required]
-  -u, --username                                            [default: "you"]
-
-```
-
-```
-> telepathy -d example.com
-iIw+B2uWs,
-u@FJ.K-s{:
-(Eqo-9w.KV
-f#2K@XEowy
-0vU7ub/#&+
-```
-
+See the primary repository at https://gitlab.com/chameleoid/telepaty/about for
+additional information.
 
 ## Examples
 ```javascript
@@ -73,20 +20,11 @@ console.log(new Telepathy('testing').password({
 }));
 ```
 
-
 ## Contributing
 Please note that this project is released with a
 [Contributor Code of Conduct][]. By participating in this project you agree to
 abide by its terms.
-
-Please see the [Chameleoid Styleguide][] before contributing.
-
-Take care to maintain the existing coding style.  Add unit tests for any new or
-changed functionality.  Lint and test your code using [Gulp][].
-
 [Contributor Code of Conduct]: http://www.chameleoid.com/conduct
-[Chameleoid Styleguide]: https://github.com/chameleoid/style
-[Gulp]: http://gulpjs.com/
 
 
 ## License
