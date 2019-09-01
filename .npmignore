@@ -4,5 +4,10 @@
 **/tslint.json
 **/webpack.config.ts
 **/jest.config.js
-src
-demo
+coverage/
+demo/
+src/
+tests/
+Session.vim
+shell.nix
+stats.json
