@@ -11,13 +11,13 @@ additional information.
 
 ## Examples
 ```javascript
-const Telepathy = require('@telepathy/lib');
+const { default: Telepathy, Alphabet } = require('@telepathy/lib');
 
 console.log(new Telepathy('testing').password({
   user: 'rummik',
   domain: 'rummik.com',
   length: 300,
-  alphabet: Telepathy.alphabet.base94,
+  alphabet: Alphabet.base94,
 }));
 ```
 
