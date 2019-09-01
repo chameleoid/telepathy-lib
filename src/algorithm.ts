@@ -38,8 +38,7 @@ export enum Algorithm {
   sha3_384 = 'sha3_384',
   sha3_512 = 'sha3_512',
   ripemd160 = 'ripemd160',
-};
-
+}
 
 export type AlgorithmStrings = keyof typeof Algorithm;
 
